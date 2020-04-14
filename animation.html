@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animation</title>
+    </head>
+    <body>
+
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4">
+        <div class="ball5"></div>
+        </div>
+        </html>
+    </body>
+
+<style>
+
+  
+    .ball1 {
+      margin-top: 15%;
+      margin-left: 60%;
+      animation-name: grow1;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      background-color: pink;
+
+    }
+
+    .ball2 {
+      margin-top: 15%;
+      margin-left: 60%;
+      animation-name: grow2;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      background-color: rgb(163, 214, 238);
+    }
+  
+    
+    .ball3 {
+      margin-top: 5%;
+      margin-left: 10%;
+      animation-name: grow3;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background-color: rgb(77, 16, 85);
+    }
+    
+    .ball4 {
+      margin-top: 18%;
+      margin-left: 70%;
+      animation-name: grow3;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      height: 100px;
+      width: 100px;
+      background-color: rgb(77, 16, 85);
+    }
+
+    .ball5 {
+      margin-top: 15%;
+      margin-left: 20%;
+      animation-name: grow4;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      background-color: rgb(10, 168, 71);
+    }
+  
+    @keyframes grow1 {
+      50% {
+        transform: scale(0.5);
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes grow2 {
+        20% {
+            transform: scale(2);
+            opacity: 0.5;
+        }
+    }
+
+    @keyframes grow3 {
+        20% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(0.5);
+            opacity: 0.5;
+        }
+    }
+
+    @keyframes grow4 {
+        50% {
+            transform: scale(3);
+            opacity: 0.75;
+        }
+    }
+
+    @keyframes grow5 {
+        25% {
+            transform: scale(0.25);
+            opacity: 0.25;
+        }
+        50% {
+            transform: scale(0.5);
+            opacity: 0.5;
+        }
+        75% {
+            transform: scale(0.75);
+            opacity: 0.75;
+        }
+    }
+  
+   
+    
+  </style>
+
+  </html>
+  
+
+
+
