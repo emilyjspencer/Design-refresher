@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Animated Squares</title>
+    </head>
+    <body>
+        <div class="squares" id="square1">M</div>
+        <div class="squares" id="square2">I</div>
+        <div class="squares" id="square3">L</div>
+        <div class="squares" id="square4">Y</div>
+        <div class="squares" id="square5">E</div>
+    <style>
+
+    .squares {
+      border-radius: 5%;
+      background: linear-gradient(
+        60deg,
+        #82d3d3,
+        #7a316e
+      );
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      margin-top: 50px;
+      animation-name: drop;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    #square1 {
+      left:27%;
+      animation-timing-function: linear;
+  
+    }
+
+    #square2 {
+      left:56%;
+      animation-timing-function: ease-out;
+  
+    }
+
+    #square3 {
+      left:68%;
+      animation-timing-function: ease-in;
+  
+    }
+
+    #square4 {
+      left:86%;
+      animation-timing-function: ease;
+  
+    }
+
+    
+    #square5 {
+      left:16%;
+      animation-timing-function: ease;
+  
+    }
+  
+    @keyframes drop {
+      0% {
+        top: 0px;
+      }
+      50% {
+          top: 150px;
+          opacity: 50px;
+      }
+      100% {
+        top: 249px;
+      }
+    }
+  
+  </style>
+
+</body>
+</html>
