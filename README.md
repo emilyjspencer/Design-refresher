@@ -205,56 +205,77 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 
 **CSS Flexbox**
 
-Adding display: flex;   to an element turns it into a flex container
-We can set the flex-direction
-The default value for flex-direction is row
-flex-direction: row;      - makes elements sit side by side
-flex-direction: column;  - makes elements sit on top of each other (in a column)
-flex-direction: row-reverse;
+* Adding display: flex;   to an element turns it into a flex container
+* We can set the flex-direction
+* The default value for flex-direction is row
+* flex-direction: row;      - makes elements sit side by side
+* flex-direction: column;  - makes elements sit on top of each other (in a column)
+* flex-direction: row-reverse;
 
-Parent and child elements
+* Parent and child elements
 
-header {
-
-}
-
-parent element
-
-
-header .profile-name {
+* header {
 
 }
 
-child element
+* parent element
 
-justify-content property - aligns items along the main axis
-for rows - the main axis is horizontal
-for columns - the main axis is vertical
-justify-content: center;
-justify-content: flex-start;
-justify-content: flex-end;
-justify-content: space-between;
-justify-content: space-around;
-justify-content: space-evenly;
 
-align-items property - aligns items along the cross axis
-for rows - the cross axis is vertical
-for columns - the cross axis is horizontal
-align-items: center;
-for rows - vertically aligns
-for columns - horizonally aligns
-align-items: flex-start;
-for rows - elements pushed to the top of flex container
-for columns - elements pushed left
-align-items: flex-end;
-for rows - elements pushed to the bottom of the container
-for columns - elements pushed to the right
-align-items: stretch; - stretch items to fill the container
-for rows - stretch top to bottom
-for columns - stretch right to left
-align-items: baseline;
-flex-wrap
+* header .profile-name {
 
+}
+
+* child element
+
+* justify-content property - aligns items along the main axis
+* for rows - the main axis is horizontal
+* for columns - the main axis is vertical
+* justify-content: center;
+* justify-content: flex-start;
+* justify-content: flex-end;
+* justify-content: space-between;
+* justify-content: space-around;
+* justify-content: space-evenly;
+
+* align-items property - aligns items along the cross axis
+* for rows - the cross axis is vertical
+* for columns - the cross axis is horizontal
+* align-items: center;
+* for rows - vertically aligns
+* for columns - horizonally aligns
+* align-items: flex-start;
+* for rows - elements pushed to the top of flex container
+* for columns - elements pushed left
+* align-items: flex-end;
+* for rows - elements pushed to the bottom of the container
+* for columns - elements pushed to the right
+* align-items: stretch; - stretch items to fill the container
+* for rows - stretch top to bottom
+* for columns - stretch right to left
+* align-items: baseline;
+
+* flex-wrap - allows you to splut a flex item into rows and columns
+
+* flex-wrap - tells CSS to wrap items
+
+* no wrap - doesn't wrap
+* wrap 
+* for rows - wrap items from left to right
+* for columns - wrap items from top to bottome
+* wrap-reverse
+* for rows - wrap items from right to left
+* for columns - wrap items from bottom to top
+
+* flex-shrink - shrink if flex container is too small
+the higher the number, the more it will shrink
+* flex-grow - enlarges the item
+the higher the number, the more it will grow
+* flex-basis - set the initial size of item
+* flex shorthand property = allows you to specify flex-grow, flex-shrink and flex-basis in one way
+**flex: 1 0 20px**
+flex-grow = 1
+flex-shrink = 0
+flex-basis: 20px
 
 
 **CSS Grid**
