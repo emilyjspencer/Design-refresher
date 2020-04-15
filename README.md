@@ -150,7 +150,6 @@ see colour at all
 }
 
 
-
 * background: url(link); - set an image from the web as background
 * transform: scale() - change scale of element
 * p:hover {
@@ -162,6 +161,47 @@ see colour at all
 
 
 **Responsive Web Design**
+
+* Make an image responsive:
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* Media queries - change the presentation of content based on different viewport sizes -
+vary according to which device is being used.
+
+@media (max-width: 800px) {
+    p { 
+      font-size: 10px;
+    }
+}
+
+This media query returns the paragraph when the device's width is no more than 800px
+
+* Retina images - to use a retina image - make the height and the width 50% of 
+the original image's width and height
+
+* Make text responsive by using vw vh vmin vmax
+
+body {
+    width: 30vw;
+}
+
+sets the width of the body tag to 30% of the viewport's width
+
+h2 {
+    width: 80vw;
+}
+
+sets the width of the h2 tag to 80% fo the viewport's width
+
+p {
+    wdith: 75vmin;
+}
+
+sets the width of the paragraph as 75% of the viewport's smallest dimension
 
 **CSS Flexbox**
 
