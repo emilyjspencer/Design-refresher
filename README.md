@@ -198,12 +198,63 @@ h2 {
 sets the width of the h2 tag to 80% fo the viewport's width
 
 p {
-    wdith: 75vmin;
+    width: 75vmin;
 }
 
 sets the width of the paragraph as 75% of the viewport's smallest dimension
 
 **CSS Flexbox**
+
+Adding display: flex;   to an element turns it into a flex container
+We can set the flex-direction
+The default value for flex-direction is row
+flex-direction: row;      - makes elements sit side by side
+flex-direction: column;  - makes elements sit on top of each other (in a column)
+flex-direction: row-reverse;
+
+Parent and child elements
+
+header {
+
+}
+
+parent element
+
+
+header .profile-name {
+
+}
+
+child element
+
+justify-content property - aligns items along the main axis
+for rows - the main axis is horizontal
+for columns - the main axis is vertical
+justify-content: center;
+justify-content: flex-start;
+justify-content: flex-end;
+justify-content: space-between;
+justify-content: space-around;
+justify-content: space-evenly;
+
+align-items property - aligns items along the cross axis
+for rows - the cross axis is vertical
+for columns - the cross axis is horizontal
+align-items: center;
+for rows - vertically aligns
+for columns - horizonally aligns
+align-items: flex-start;
+for rows - elements pushed to the top of flex container
+for columns - elements pushed left
+align-items: flex-end;
+for rows - elements pushed to the bottom of the container
+for columns - elements pushed to the right
+align-items: stretch; - stretch items to fill the container
+for rows - stretch top to bottom
+for columns - stretch right to left
+align-items: baseline;
+flex-wrap
+
 
 
 **CSS Grid**
