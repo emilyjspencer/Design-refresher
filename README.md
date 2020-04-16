@@ -277,8 +277,15 @@ the higher the number, the more it will grow
 flex-grow = 1
 flex-shrink = 0
 flex-basis: 20px
+order:  to specify the order items appear in the flex container
 
 
 **CSS Grid**
+
+display: grid;   - creates a grid container on which you can use grid properties
+grid-template-columns  - creates columns in the grid container
+grid-template-rows - creates rows in the grid container 
+column units - fr % px
+grid-column-gap - creates a column gap
 
 
