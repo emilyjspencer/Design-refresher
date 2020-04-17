@@ -16,6 +16,8 @@
 * **block level elements** - divs, headings, paragraphs
 * **inline elements** - img, span
 
+<hr>
+
 **CSS**
 
 **Text**
@@ -32,6 +34,7 @@
 * **text-transform: uppercase**;   - make text uppercase
 * **text-transform: captialize;**   - capitalize text
 
+<hr>
 
 **Colour**
 
@@ -49,6 +52,8 @@
 * **repeating-linear-gradient()**
 * **colour stops**
 
+<hr>
+
 **Spacing**
 
 * **line-height:**   - set line height
@@ -64,6 +69,8 @@
 * The higher the z-index value, the higher the element is in the stack)
 * **margin: auto;**    - centre an element
 
+<hr>
+
 **Decoration**
 
 * **border: solid black 2px;**
@@ -73,6 +80,7 @@
 * **blur-radius** - 
 * **spread-readius**
 
+<hr>
 
 **Animations**
 
@@ -90,7 +98,7 @@
 * **transition-delay: 2s;**
 * **transition- property: width;**
 
-
+<hr>
 
 **Accessibility**
 
@@ -115,6 +123,8 @@ from the headings, only 'hear' the links on a page
 * add **legend** tag to provide a description for the grouping
 * audio **controls** attribute
 
+<hr>
+
 **Colour-blindness**
 
 * Colour blindness can vary from reduced sensitivity to a certain wavelenth to an inability to 
@@ -136,11 +146,15 @@ see colour at all
 * **Inline styles** override everything in CSS
 * **!important keyword** overrides everything including CSS from libraries
 
+<hr>
+
 **CSS Variables**
 
 * Create a variable like so:
 
 * --face: pink;
+
+<hr>
 
 **Other**
 
@@ -159,7 +173,7 @@ see colour at all
 * transform: skewX(-32deg); - skew the element along the X-axis
 * transform: skewY(-10deg); - skew the element along the Y-axis 
 
-
+<hr>
 
 **Responsive Web Design**
 
@@ -203,6 +217,8 @@ p {
 }
 
 sets the width of the paragraph as 75% of the viewport's smallest dimension
+
+<hr>
 
 **CSS Flexbox**
 
@@ -278,14 +294,110 @@ flex-grow = 1
 flex-shrink = 0
 flex-basis: 20px
 order:  to specify the order items appear in the flex container
+<hr>
 
 
 **CSS Grid**
 
-display: grid;   - creates a grid container on which you can use grid properties
-grid-template-columns  - creates columns in the grid container
-grid-template-rows - creates rows in the grid container 
-column units - fr % px
-grid-column-gap - creates a column gap
+* **display: grid;**   - creates a grid container on which you can use grid properties
+* **grid-template-columns**  - creates columns in the grid container
+* **grid-template-rows** - creates rows in the grid container 
+* **column units** - fr % px
+* **grid-column-gap** - creates gaps between columns
+* **grid-row-gap**  - creates gaps between rows 
+* **grid-gap** - shorthand for grid-column-gap and grid-row-gap
+if one value only - creates gaps for all columns and rows
+if two values - first value for rows, second value for columns 
+***grid-column** - used on the grid items themselves. Can be used to specify how many
+columns to consume
+grid-column: 2 / 4; - consume the last two columns
+* **grid-row** - used on the grid items themselves. Can be used to specify how msny
+rows to consume
+grid-row: 2 /4; - consume the last two rows
 
 
+<hr>
+
+
+**Bootstrap**
+
+* Add Bootstrap to a project: <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+* To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element: <meta name="viewport" content="width=device-width, initial-scale=1">
+* Elements must enclosed in a container. 
+Bootstrap 4 offers two classes:
+* **.container**  provides a responsive fixed width container
+* **.container-fluid** class provides a full width container, spanning the entire width of the viewport
+
+
+* Make an image responsive by adding the **class "img-responsive"** to the image
+* Centre an image by adding the **class "text-center"** to the image
+* Create Bootstrap buttons - add the **btn and btn-default** classes to the button
+* **btn-danger** - red - dangerous action
+* **btn-success** - green - successful
+* **btn-info** - light blue - optional actions
+* **btn-primary** - darker blue - most important actions
+* **BootStrap Grid** - made up of 12 columns
+
+* Bootstrap 4 default settings:
+* **font-size:** 16px
+* **line-height:**  1.5.
+* **font-family:** "Helvetica Neue", Helvetica, Arial, sans-serif.
+
+* All <p> elements have margin-top: 0 and margin-bottom: 1rem (16px)
+
+*Bootstrap Headers
+
+* 2.5rem 40px h1
+* 2rem 32px h2
+* 1.75rem 28px h3
+* 1.5rem 24px h4
+* 1.25rem 20px h5
+* 1rem 16px h6
+
+* Bootstrap Displays
+* Four classes:
+
+* .display-1    biggest
+* .display-2
+* .display-3
+* .display-4    smallest 
+
+<small> tag - used to create smaller, lighter, secondary text in a heading 
+
+* Bootstrap text colours
+
+* Classes to provide meaning through text:
+* .text-muted - grey
+* .text-primary  - darker blue - important text
+* .text-success - green
+* .text-info - light blue - some information
+* .text-warning - yellow   - warning 
+* .text-danger - red - danger
+* .text-secondary - 
+* .text-white
+* .text-dark
+* .text-body (default body color/often black) and .text-light:
+
+* Bootstrap backgrounds
+
+* .bg-primary
+* .bg-success
+* .bg-info
+* .bg-warning
+* .bg-danger
+* .bg-secondary
+* .bg-dark
+* .bg-light
+
+* span - allows you to put several elements on the same line 
+
+* Add icons to pages by using Font Awesome
+* Add this link to the top of the html:
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+* Add a thumbs up icon to a button:
+<button class="btn btn-black btn-primary"><i class="fas fa-thumbs-up"></i>Like</button>
+* Add an info circle icon to a button:
+<button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i>Info</button>
+* Add a bin icon to a button:
+<button class="btn btn-block btn-danger"><i class="fas fa-trash"></i>Delete</button>
+  
