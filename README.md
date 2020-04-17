@@ -321,8 +321,8 @@ grid-row: 2 /4; - consume the last two rows
 
 **Bootstrap**
 
-* Add Bootstrap to a project: <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-* To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element: <meta name="viewport" content="width=device-width, initial-scale=1">
+* Add Bootstrap to a project: <pre><code><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/></code></pre>
+* To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element: <pre><code><meta name="viewport" content="width=device-width, initial-scale=1"></code></pre>
 * Elements must enclosed in a container. 
 Bootstrap 4 offers two classes:
 * **.container**  provides a responsive fixed width container
@@ -338,66 +338,67 @@ Bootstrap 4 offers two classes:
 * **btn-primary** - darker blue - most important actions
 * **BootStrap Grid** - made up of 12 columns
 
-* Bootstrap 4 default settings:
+**Bootstrap 4 default settings:**
 * **font-size:** 16px
 * **line-height:**  1.5.
 * **font-family:** "Helvetica Neue", Helvetica, Arial, sans-serif.
 
 * All <p> elements have margin-top: 0 and margin-bottom: 1rem (16px)
 
-*Bootstrap Headers
+**Bootstrap Headers**
 
-* 2.5rem 40px h1
-* 2rem 32px h2
-* 1.75rem 28px h3
-* 1.5rem 24px h4
-* 1.25rem 20px h5
-* 1rem 16px h6
+* **2.5rem** 40px h1
+* **2rem** 32px h2
+* **1.75rem** 28px h3
+* **1.5rem** 24px h4
+* **1.25rem** 20px h5
+* **1rem** 16px h6
 
-* Bootstrap Displays
-* Four classes:
+**Bootstrap Displays**
 
-* .display-1    biggest
-* .display-2
-* .display-3
-* .display-4    smallest 
+* **Four classes:
 
-<small> tag - used to create smaller, lighter, secondary text in a heading 
+* **.display-1**    biggest
+* **.display-2**
+* **.display-3**
+* **.display-4**    smallest 
 
-* Bootstrap text colours
+**<small>** tag - used to create smaller, lighter, secondary text in a heading 
 
-* Classes to provide meaning through text:
-* .text-muted - grey
-* .text-primary  - darker blue - important text
-* .text-success - green
-* .text-info - light blue - some information
-* .text-warning - yellow   - warning 
-* .text-danger - red - danger
-* .text-secondary - 
-* .text-white
-* .text-dark
-* .text-body (default body color/often black) and .text-light:
+**Bootstrap text colours**
 
-* Bootstrap backgrounds
+**Classes to provide meaning through text:**
+* **.text-muted** - grey
+* **.text-primary**  - darker blue - important text
+* **.text-success** - green
+* **.text-info** - light blue - some information
+* **.text-warning** - yellow   - warning 
+* **.text-danger** - red - danger
+* **.text-secondary** 
+* **.text-white**
+* **.text-dark**
+* **.text-body** (default body color/often black) and .text-light:
 
-* .bg-primary
-* .bg-success
-* .bg-info
-* .bg-warning
-* .bg-danger
-* .bg-secondary
-* .bg-dark
-* .bg-light
+**Bootstrap backgrounds**
 
-* span - allows you to put several elements on the same line 
+* **.bg-primary**
+* **.bg-success**
+* **.bg-info**
+* **.bg-warning**
+* **.bg-danger**
+* **.bg-secondary**
+* **.bg-dark**
+* **.bg-light**
+
+**span** - allows you to put several elements on the same line 
 
 * Add icons to pages by using Font Awesome
 * Add this link to the top of the html:
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<pre><code><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></code></pre>
 * Add a thumbs up icon to a button:
-<button class="btn btn-black btn-primary"><i class="fas fa-thumbs-up"></i>Like</button>
+<pre><code><button class="btn btn-black btn-primary"><i class="fas fa-thumbs-up"></i>Like</button></code></pre>
 * Add an info circle icon to a button:
-<button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i>Info</button>
+<pre><code><button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i>Info</button></code></pre>
 * Add a bin icon to a button:
-<button class="btn btn-block btn-danger"><i class="fas fa-trash"></i>Delete</button>
+<pre><code><button class="btn btn-block btn-danger"><i class="fas fa-trash"></i>Delete</button></code></pre>
   
