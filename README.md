@@ -15,6 +15,10 @@
 * **hr**  - add a line across page
 * **block level elements** - divs, headings, paragraphs
 * **inline elements** - img, span
+* **text-decoration-thickness:** 3px;
+* **text-emphasis:** filled red;
+-webkit-text-emphasis: filled red;
+* **text-shadow:** 0.5px 0.5px #726e6e;
 
 <hr>
 
@@ -23,6 +27,10 @@
 **Text**
 
 *Import Google Fonts to make use of more interesting fonts*
+by adding the following link within the head tag:
+```html
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+```
 
 * **text-decoration: none;**      - no decoration
 * **text-decoration: underline;**   - give text an underline
@@ -136,9 +144,14 @@ see colour at all
 * Colours shouldn't be to only way to convey important info - not detected by screen-readers
 
 **Links**
+```html
 * <a href="url">Hello</a>  - adds a url link with the word Hello
+```
 * href="#" - create a dead link
-* a href="#contacts-header">Contacts</a> - create an interal link - jump to specified part of page
+```html
+* a href="#contacts-header">Contacts</a>
+```
+ - create an interal link - jump to specified part of page
 
 **CSS precedence**
 * The **most recently added class** will override the others
@@ -158,18 +171,33 @@ see colour at all
 
 **Other**
 
+* **centre an image** by adding the following to the image's class or id:
+```html
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+```
+
+  
 * border-radius   - 50% = circle  5% = square
 
+```html
 * a:hover {          - use a pseudoclass - changes to red when mouse hovers over element
     color: red;
 }
+```
 
 
 * **background: url(link);** - set an image from the web as background
 * **transform: scale()** - change scale of element
+
+```html
 * p:hover {
     transform: scale(2.1);
 }
+```
+
 * transform: skewX(-32deg); - skew the element along the X-axis
 * transform: skewY(-10deg); - skew the element along the Y-axis 
 
@@ -179,19 +207,23 @@ see colour at all
 
 * **Make an image responsive:**
 
+```html
 img {
   max-width: 100%;
   height: auto;
 }
+```
 
 * **Media queries** - change the presentation of content based on different viewport sizes -
 vary according to which device is being used.
 
+```html
 @media (max-width: 800px) {
     p { 
       font-size: 10px;
     }
 }
+```
 
 This media query returns the paragraph when the device's width is no more than 800px
 
@@ -200,21 +232,27 @@ the original image's width and height
 
 * **Make text responsive by using vw vh vmin vmax**
 
+```html
 body {
     width: 30vw;
 }
+```
 
 sets the width of the body tag to 30% of the viewport's width
 
+```html
 h2 {
     width: 80vw;
 }
+```
 
 sets the width of the h2 tag to 80% fo the viewport's width
 
+```html
 p {
     width: 75vmin;
 }
+```
 
 sets the width of the paragraph as 75% of the viewport's smallest dimension
 
@@ -321,8 +359,18 @@ grid-row: 2 /4; - consume the last two rows
 
 **Bootstrap**
 
-* Add Bootstrap to a project: <pre><code><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/></code></pre>
-* To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element: <pre><code><meta name="viewport" content="width=device-width, initial-scale=1"></code></pre>
+* Add Bootstrap to a project: 
+
+```html
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+```
+
+* To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element: 
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
 * Elements must enclosed in a container. 
 Bootstrap 4 offers two classes:
 * **.container**  provides a responsive fixed width container
@@ -392,13 +440,39 @@ Bootstrap 4 offers two classes:
 
 **span** - allows you to put several elements on the same line 
 
-* Add icons to pages by using Font Awesome
-* Add this link to the top of the html:
-<pre><code><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></code></pre>
-* Add a thumbs up icon to a button:
-<pre><code><button class="btn btn-black btn-primary"><i class="fas fa-thumbs-up"></i>Like</button></code></pre>
-* Add an info circle icon to a button:
-<pre><code><button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i>Info</button></code></pre>
-* Add a bin icon to a button:
-<pre><code><button class="btn btn-block btn-danger"><i class="fas fa-trash"></i>Delete</button></code></pre>
+**Add icons to pages by using Font Awesome**
+**Add this link to the top of the html:**
+
+```html
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+```
+
+
+**Add a thumbs up icon to a button:**
+
+```html
+<button class="btn btn-black btn-primary"><i class="fas fa-thumbs-up"></i>Like</button>
+```
+
+**Add an info circle icon to a button:**
+
+```html
+<button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i>Info</button>
+```
+
+**Add a bin icon to a button:**
+
+```html
+<button class="btn btn-block btn-danger"><i class="fas fa-trash"></i>Delete</button>
+```
+
+**Create a Bootstrap Well** to create visual depth:
+
+```html
+* **<div class="well></div>
+```
+
+
+ 
+
   
