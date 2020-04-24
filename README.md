@@ -263,7 +263,7 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 * Adding **display: flex;**   to an element turns it into a flex container
 * We can set the flex-direction
 * The default value for flex-direction is row
-* **flex-direction: row; **     - makes elements sit side by side
+* **flex-direction: row; **   - makes elements sit side by side
 * **flex-direction: column;**  - makes elements sit on top of each other (in a column)
 * **flex-direction: row-reverse;**
 
@@ -281,6 +281,10 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 }
 
 * **child element**
+
+**Justify-content vs. align-items**
+
+* justify-content and align-items do the SAME THING, but just along different axes
 
 * **justify-content property** - aligns items along the main axis
 * for rows - the main axis is horizontal
