@@ -205,6 +205,11 @@ display: block;
 
 **Responsive Web Design**
 
+* With responsive web design, the layout changes based on the size and capabilities of the device. 
+* Mobiles - content might collapse into a column
+* Tablet - content might be in two columns, while content is much more spread out on a computer because the view port is much bigger 
+ 
+
 * **Make an image responsive:**
 
 ```html
@@ -216,6 +221,9 @@ img {
 
 * **Media queries** - change the presentation of content based on different viewport sizes -
 vary according to which device is being used.
+* Can be applied to CSS styles
+
+* This media query returns the paragraph when the device's width is no more than 800px
 
 ```html
 @media (max-width: 800px) {
@@ -225,7 +233,40 @@ vary according to which device is being used.
 }
 ```
 
-This media query returns the paragraph when the device's width is no more than 800px
+
+* An example of how to change a nav bar so that when viewed on a mobile phone, the navbar collapses into a column:
+
+```html
+@media screen and(max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    background: pink;
+  }
+  a {
+    color: grey;
+  }
+}
+```
+
+* An example of how to change a nav bar so that the layout of the nav bar changes when viewed on a device with a viewport that is smaller than that of a computer. e.g. a tablet:
+
+```html
+@media screen and(max-width: 700px) {
+  nav {
+    justify-content: center;
+  }
+}
+```
+**Typical Breakpoints**
+
+**Phones** - max-width 600px;
+**Large phones and portrait tablets** - min-wdith: 600px;
+**Landscape tablets** - min-width: 768px;
+**Laptop and desktop computers** - min-width: 922px;
+**Large laptops and desktop computers** - min-widthL 1200px;
+
+
 
 * Retina images - to use a retina image - make the height and the width 50% of 
 the original image's width and height
@@ -261,19 +302,21 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 **CSS Flexbox**
 
 * Adding **display: flex;**   to an element turns it into a flex container
+* The containing elements are flex-items
 * We can set the flex-direction
 * The default value for flex-direction is row
-* **flex-direction: row; **   - makes elements sit side by side
+* **flex-direction: row;**   - makes elements sit side by side
 * **flex-direction: column;**  - makes elements sit on top of each other (in a column)
-* **flex-direction: row-reverse;**
+* **flex-direction: row-reverse;** - reverses this <-
+* *flex-direction: column-reverse;** - reverses this | up
 
-* Parent and child elements
+**Parent and child elements**
 
 * header {
 
 }
 
-* **parent element**
+* header is the **parent element**
 
 
 * header .profile-name {
@@ -282,13 +325,17 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 
 * **child element**
 
-**Justify-content vs. align-items**
 
-* justify-content and align-items do the SAME THING, but just along different axes
 
-* **justify-content property** - aligns items along the main axis
+
+**justify-content vs. align-items**
+
+* **justify-content** and **align-items** do the **SAME THING**, but just along different axes
+
+* **justify-content** - aligns items along the main axis
 * for rows - the main axis is horizontal
 * for columns - the main axis is vertical
+
 * **justify-content: center;**
 * **justify-content: flex-start;**
 * **justify-content: flex-end;**
@@ -296,9 +343,11 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 * **justify-content: space-around;**
 * **justify-content: space-evenly;**
 
-* **align-items** property - aligns items along the cross axis
+* **align-items** - aligns items along the cross axis
+* the default value for align-items is **stretch** 
 * for **rows**- the cross axis is vertical
 * for **columns** - the cross axis is horizontal
+
 * **align-items: center;**
 * for **rows** - vertically aligns
 * for **columns** - horizonally aligns
@@ -311,25 +360,49 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 * align-items: stretch; - stretch items to fill the container
 * for **rows** - stretch top to bottom
 * for **columns** - stretch right to left
-* align-items: baseline;
+* align-items: baseline; - aligns items so that a line can be drawn through them, ene if the flex items are of different size
 
-* **flex-wrap** - allows you to splut a flex item into rows and columns
+```html
+.container {
+  align-items: baseline;
+}
+```
+
+```html
+flex-direction: rows;
+align-items: flex-end;
+justify-content: center;
+flex-wrap: wrap;
+```
+
+
+
+**align-content**
+
+* **align-content** - defines how space is distributed BETWEEN  ROWS in the flex container
+**ACROSS THE CROSS AXIS |**
+
+
+
+
+
+* **flex-wrap** - allows you to split a flex item into rows and columns
 
 * flex-wrap - tells CSS to wrap items
-
-* **no wrap** - doesn't wrap
-* **wrap **
-* for rows - wrap items from left to right
-* for columns - wrap items from top to bottome
+* the default is no wrap
+* **no wrap** - doesn't wrap and content goes onto separate lines, growing to the width specified
+* **wrap**
+* for rows - wraps items from left to right
+* for columns - wraps items from top to bottome
 * **wrap-reverse**
 * for rows - wrap items from right to left
 * for columns - wrap items from bottom to top
 
-* **flex-shrink** - shrink if flex container is too small
+* **flex-shrink** - shrinks if flex container is too small
 the higher the number, the more it will shrink
 * **flex-grow** - enlarges the item
 the higher the number, the more it will grow
-* **flex-basis** - set the initial size of item
+* **flex-basis** - sets the initial size of item
 * flex shorthand property = allows you to specify flex-grow, flex-shrink and flex-basis in one way
 **flex: 1 0 20px**
 flex-grow = 1
