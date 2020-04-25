@@ -7,3 +7,6 @@
 ![reponsiveDisplay](responsiveDisplay.png)
 ![reponsiveDisplayCollapsed](responsiveDisplayCollapsedFlexGrow1.png)
 
+* Using flex: 1 1 220px
+
+![reponsiveDisplayCollasped2](responsiveDisplayCollapsedFlex1 1 220.png)
