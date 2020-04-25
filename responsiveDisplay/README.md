@@ -9,4 +9,4 @@
 
 * Using flex: 1 1 220px
 
-![reponsiveDisplayCollasped2](responsiveDisplayCollapsedFlex1 1 220.png)
+![reponsiveDisplayCollasped2](responsiveDisplayCollapsedFlex11220.png)
