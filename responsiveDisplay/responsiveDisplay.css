@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=DancingScript:200');
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rectangle {
+  font-family: DancingScript;
+  background: #9ed3f1;
+  color: white;
+  flex-grow: 1;
+
+  padding: 20px;
+  transition: 0.9s background;
+  height: 100px;
+}
+
+.mid {
+  background: #6a8bd3;
+}
+
+.rectangle:hover {
+  background: #db8ee6;
+}
+
+h2 {
+  font-size: 30px;
+}
