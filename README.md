@@ -260,11 +260,11 @@ vary according to which device is being used.
 ```
 **Typical Breakpoints**
 
-**Phones** - max-width 600px;
-**Large phones and portrait tablets** - min-wdith: 600px;
-**Landscape tablets** - min-width: 768px;
-**Laptop and desktop computers** - min-width: 922px;
-**Large laptops and desktop computers** - min-widthL 1200px;
+* **Phones** - max-width 600px;
+ **Large phones and portrait tablets** - min-wdith: 600px;
+* **Landscape tablets** - min-width: 768px;
+* **Laptop and desktop computers** - min-width: 922px;
+* **Large laptops and desktop computers** - min-widthL 1200px;
 
 
 
@@ -325,8 +325,26 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 
 * **child element**
 
+**There are two types of properties:**
+ 
+* container properties - applies to the flex container
+* flex item properties - applies to the individual flex items
 
+**container properties:**
+* align-items
+* align-content
+* flex-wrap
+* flex-direction
+* justify-content
 
+**item properties:**
+* order
+* flex
+* flex-grow
+* flex-shrink
+* align-self
+
+**Container properties:**
 
 **justify-content vs. align-items**
 
@@ -349,6 +367,8 @@ sets the width of the paragraph as 75% of the viewport's smallest dimension
 * for **columns** - the cross axis is horizontal
 
 * **align-items: center;**
+
+* the **default** for **align-items** is **stretch**
 * for **rows** - vertically aligns
 * for **columns** - horizonally aligns
 * align-items: flex-start;
@@ -409,6 +429,43 @@ flex-grow = 1
 flex-shrink = 0
 flex-basis: 20px
 order:  to specify the order items appear in the flex container
+
+**Flex items properties:**
+
+* **align-self** - overrides align-items - so you can single out an item and give it its own properties
+
+```html
+
+.flex-container {
+  align-items: flex-end;
+}
+
+.flex-item {
+  align-items: flex-start;
+}
+```
+
+* the flex-item now follows the align-items: flex-start, overriding the flex-end
+
+**order** - allows us to specify the order that flex items should be displayed
+
+* can be used with responsive items - declare one order for one layout e.g computer layour
+and a different order for a mobile layout
+
+**flex** - defines how a flex item will grow or shrink to fit the available space in the flex container 
+* it is shorthand for flex-grow, flex-shrink and flex-basis
+
+**flex-basis** - specifies the ideal size of a flex item BEFORE it is place into a flex container
+* flex-basis takes precedence i.e if a height and a flex-basis are defined for an element - flex-items takes priority
+
+
+**flex-grow** - if items don't completely fill the flex container, flex-grow can be used to define how to divide up the extra space among the flex items 
+* By default, flex-grow is 0
+
+**flex-shrink**
+
+
+
 <hr>
 
 
@@ -637,3 +694,15 @@ div {
 * The underscore indicates that the file is only a partial file and that it should not be generated into a CSS file. 
 * Sass partials are used with the @use rule.
   
+
+**Wireframes**
+
+Wireframes are a useful way of planning the content and layout of a website before you start coding.
+A wireframe is a drawing that shows the different elements of your page.
+
+They help you plan out the design of each web page and make important decisions about how a page will be structured.
+
+Wireframes also help you to decide how the user will interact with the page and move between the other pages on the website.
+
+
+
